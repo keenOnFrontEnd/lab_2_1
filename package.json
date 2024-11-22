@@ -1,0 +1,34 @@
+{
+  "name": "lab_2_1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src",
+    "debug": "cross-env NODE_ENV=development DEBUG=express:* tsx watch src",
+    "prod": "cross-env NODE_ENV=production tsx watch src",
+    "build": "tsc --build && tsc-alias",
+    "bundle": "parcel build build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mssql": "^9.1.5",
+    "@types/node": "^22.9.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.0",
+    "@types/swagger-ui-express": "^4.1.7",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "msnodesqlv8": "^4.4.0",
+    "mssql": "^11.0.1",
+    "swagger-ui-express": "^5.0.1",
+    "tsx": "^4.19.2"
+  }
+}
